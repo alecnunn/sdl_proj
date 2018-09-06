@@ -1,0 +1,5 @@
+debug/
+obj/
+release/
+Makefile
+MyApp.make
