@@ -30,8 +30,8 @@ void bold() {
     printf("\033[1m");
 }
 
-#ifdef DEBUG
 void engine_log(const char* msg, char type) {
+#ifdef DEBUG
     switch(type) {
         case 'i': {
                       blue();
@@ -61,7 +61,5 @@ void engine_log(const char* msg, char type) {
 
     reset();
     printf("%s\n", msg);
-}
-#else
-void engine_log(const char* msg, char type) {}
 #endif
+}

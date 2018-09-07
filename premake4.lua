@@ -1,6 +1,6 @@
-solution "MyApp"
+solution "sdl_app"
     configurations { "Debug", "Release" }
-    project "MyApp"
+    project "sdl_app"
     kind "ConsoleApp"
     language "C"
     files {
@@ -15,5 +15,4 @@ solution "MyApp"
         targetdir "debug"
 
     configuration "Release"
-        defines { "NDEBUG" }
         targetdir "release"
